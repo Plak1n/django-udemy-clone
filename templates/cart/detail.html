@@ -54,7 +54,7 @@
                                                         </div>
                                                         <div class="move-remove">
                                                             <div>
-                                                                <form action="" method="post">
+                                                                <form action="{% url 'cart:cart_remove' course.slug %}" method="post">
                                                                     {% csrf_token %}
                                                                     <input type="hidden" value="{{ course.slug }}">
                                                                     <input type="submit" class="btn-success"
