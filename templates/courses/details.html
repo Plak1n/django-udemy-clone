@@ -64,10 +64,10 @@
                             <div class="title float-left">Lessons for this course</div>
                             <div class="float-right">
                                 <span class="total-lectures">
-                                    {{ course.lessons.count }} lessons
+                                    {% comment %} {{ course.lessons.count }} lessons {% endcomment %}
                                 </span>
                                 <span class="total-time">
-                                    2 hours
+                                    {% comment %} {{ course.lessons|total_minutes | floatformat:2 }} minute {% endcomment %}
                                 </span>
                             </div>
                         </div>
